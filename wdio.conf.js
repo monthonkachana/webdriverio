@@ -7,7 +7,7 @@ exports.config = {
   // ====================
   // WebdriverIO supports running e2e tests as well as unit and component tests.
   runner: "local",
-  port: 4724,
+  port: 4723,
   //
   // ==================
   // Specify Test Files
@@ -51,18 +51,27 @@ exports.config = {
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [
+    // {
+    //   // capabilities for local Appium web tests on an Android Emulator
+    //   // android studio
+    //   platformName: "Android",
+    //   // browserName: 'Chrome',
+    //   "appium:deviceName": "emulator-5554",
+    //   "appium:platformVersion": "11.0",
+    //   "appium:automationName": "UiAutomator2",
+    //   // path.join(process.connected(),)
+    //   // path.join(process.cwd(),)
+    //   // "appium:app": "./apk/android.wdio.native.app.v1.0.8.apk",
+    //   "appium:waitStartTime": 60000,
+    //   "appium:waitforTimeout": 60000,
+    // },
+    //realme real mobile
     {
-      // capabilities for local Appium web tests on an Android Emulator
       platformName: "Android",
-      // browserName: 'Chrome',
-      "appium:deviceName": "emulator-5554",
-      "appium:platformVersion": "11.0",
-      "appium:automationName": "UiAutomator2",
-      // path.join(process.connected(),)
-      // path.join(process.cwd(),)
-      // "appium:app": "./apk/android.wdio.native.app.v1.0.8.apk",
-      "appium:waitStartTime": 60000,
-      "appium:waitforTimeout": 60000,
+      "appium:platformVersion": "13",
+      "appium:deviceName": "realme UI version",
+      // "appium:app": "C:\\Users\\areat\\OneDrive\\Desktop\\android.wdio.native.app.v1.0.8.apk",
+      "appium:automationName": "UIAutomator2",
     },
   ],
 
