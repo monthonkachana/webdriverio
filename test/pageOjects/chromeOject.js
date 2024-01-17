@@ -9,4 +9,4 @@ class chromeOject {
   }
 }
 
-module.exports = new chromeOject();
+module.exports = chromeOject();
