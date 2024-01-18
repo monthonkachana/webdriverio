@@ -21,10 +21,7 @@ jobs:
         run: npm install
 
       - name: Test
-        env:
-          BROWSERSTACK_USERNAME: ${{ secrets.BS_USERNAME }}
-          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BS_ACCESS_KEY }}
-        run: npm run test:local
+        run: npx wdio run wdio.android.conf.js --spec .\test\specs\login.mobile.js
 
       - name: Upload Logs on Failure
         uses: actions/upload-artifact@v2
