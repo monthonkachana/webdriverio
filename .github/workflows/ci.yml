@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Test
-        run: npx wdio run wdio.android.conf.js --spec .\test\specs\login.mobile.js
+        run: npx wdio run wdio.bs.conf.js --spec .\test\specs\login.mobile.js
 
       - name: Upload Logs on Failure
         uses: actions/upload-artifact@v2
