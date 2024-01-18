@@ -13,7 +13,7 @@ exports.config = {
       },
     ],
   ],
-  specs: ["npx wdio run wdio.bs.conf.js --spec .\test\specs\login.mobile.js"],
+  // specs: ["npx wdio run wdio.bs.conf.js --spec .\test\specs\login.mobile.js"],
   capabilities: [
     {
       "bstack:options": {
