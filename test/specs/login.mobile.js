@@ -8,14 +8,10 @@ describe("login platform", () => {
 
     // await browser.pause(3000);
     // await wdiodemoapp.click();
-    await browser.pause(1000);
-    $(LOGIN_ICON_HOME_SCREEN).click();
-    await browser.pause(1000);
-    $(EMAIL_TXT_FIELD).setValue("a@a.com");
-    await browser.pause(1000);
-    $(PASSWORD_TXT_FIELD).setValue("123456789");
-    await browser.pause(1000);
-    $(LOGIN_BTN).click();
+    await $(LOGIN_ICON_HOME_SCREEN).click();
+    await $(EMAIL_TXT_FIELD).setValue("a@a.com");
+    await $(PASSWORD_TXT_FIELD).setValue("123456789");
+    await $(LOGIN_BTN).click();
     await browser.pause(3000);
   });
 });
