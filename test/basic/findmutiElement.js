@@ -3,12 +3,12 @@
 describe("Find-Muti-Elements", () => {
   it.only("test suit1", async () => {
     const chromeApp = await $("~Chrome");
-    await browser.pause(3000);
-    chromeApp.click();
-    await browser.pause(3000);
     const className = await $("~android.widget.EditText");
     const text = className.getText();
     console.log(text);
+
+    await browser.pause(3000);
+    chromeApp.click();
     await browser.pause(3000);
     expect(await className.getText()).toHaveText("Search");
   });
