@@ -16,4 +16,6 @@ class registerOject {
     return $("~button-SIGN UP");
   }
 }
+
+
 module.exports = new registerOject();
