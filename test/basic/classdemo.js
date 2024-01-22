@@ -1,4 +1,4 @@
-const chromeOject = require("../pageOjects/chromeOject");
+const chromeOject = require("../OOP/chromeOject");
 
 describe("class page ojects model demo", () => {
   it("click into platform chrome by class", async () => {
@@ -10,3 +10,5 @@ describe("class page ojects model demo", () => {
     expect(classText).toBe("Search or dtype URL");
   });
 });
+
+// npx wdio run wdio.android.conf.js --spec .\test\basic\classdemo.js
