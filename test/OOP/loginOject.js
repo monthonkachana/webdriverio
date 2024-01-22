@@ -1,4 +1,7 @@
-class LoginObject {
+const inheritanceLogin = require("./inheritanceLogin");
+
+class LoginObject extends inheritanceLogin {
+  
   get openFormLogin() {
     return $("~Login");
   }
