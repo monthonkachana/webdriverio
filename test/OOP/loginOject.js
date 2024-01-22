@@ -1,20 +1,13 @@
-const inheritanceLogin = require("./inheritanceLogin");
+import inheritanceLogin from "./inheritanceLogin";
+const LOGIN_BTN = '~button-LOGIN'
 
 class LoginObject extends inheritanceLogin {
-  
-  get openFormLogin() {
-    return $("~Login");
-  }
 
-  get inputField() {
-    return {
-      email: $("~input-email"),
-      password: $("~input-password"),
-    };
-  }
-  get buttonClick() {
-    return $("~button-LOGIN");
-  }
+    get login_btn(){
+        $(LOGIN_BTN).waitForDisplayed({timeout: 2000})
+        return $(LOGIN_BTN)
+    }
+
 }
 
-module.exports = new LoginObject();
+export default new LoginObject();
